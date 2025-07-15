@@ -18,24 +18,33 @@ public class App {
 
         System.out.println("operator = " + operator);
 
-        int result = 0;
-        switch(operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default:
-                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
-        }
+        while (true) {
+            int result = 0;
+            String End = "exit";
+
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    System.out.println("result = " + result);
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    System.out.println("result = " + result);
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    System.out.println("result = " + result);
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    System.out.println("result = " + result);
+                    break;
+                default:
+                    System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+            }
             System.out.println("결과: " + result);
 
-    }
-}
+            System.out.println("더 계산하시겠습니까? ");
+
+        }
+    }}
