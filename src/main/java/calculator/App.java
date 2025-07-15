@@ -19,24 +19,23 @@ public class App {
         System.out.println("operator = " + operator);
 
         int result = 0;
-        switch(sc.nextInt()) {
-            case 1:
-                int sum = num1 + num2;
+        switch(operator) {
+            case '+':
+                result = num1 + num2;
                 break;
-            case 2:
-                int sub = num1 - num2;
+            case '-':
+                result = num1 - num2;
                 break;
-            case 3:
-                int mul = num1 * num2;
+            case '*':
+                result = num1 * num2;
                 break;
-            case 4:
-                int div = num1 / num2;
+            case '/':
+                result = num1 / num2;
                 break;
             default:
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
         }
             System.out.println("결과: " + result);
-        }
 
     }
 }
