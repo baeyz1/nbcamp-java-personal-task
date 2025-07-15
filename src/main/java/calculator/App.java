@@ -18,5 +18,24 @@ public class App {
 
         System.out.println("operator = " + operator);
 
+        int result = 0;
+        switch(sc.nextInt()) {
+            case 1:
+                int sum = num1 + num2;
+                break;
+            case 2:
+                int sub = num1 - num2;
+                break;
+            case 3:
+                int mul = num1 * num2;
+                break;
+            case 4:
+                int div = num1 / num2;
+                break;
+        }
+            System.out.println("결과: " + result);
+
+        System.out.println("더 계산하시겠습니까? (exit 입력 시 종료) ");
+
     }
 }
