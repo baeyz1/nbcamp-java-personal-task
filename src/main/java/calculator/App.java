@@ -1,5 +1,6 @@
 package calculator;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
@@ -18,6 +19,7 @@ public class App {
 
         System.out.println("operator = " + operator);
 
+        ArrayList<Double> arrayList = new ArrayList<>();
         while (true) {
             int result = 0;
             String End = "exit";
@@ -44,7 +46,17 @@ public class App {
             }
             System.out.println("결과: " + result);
 
-            System.out.println("더 계산하시겠습니까? ");
+            arrayList.add(result);
+            System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)");
+            arrayList.remove();
 
+            System.out.println("저장된 연산결과를 조회하시겠습니까? (inquiry 입력 시 조회)");
+            for(int i = 0; i < arrayList(); i++) {
+                System.out.println("i = " + i);
+            }
+            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+            System.out.println("결과: " + result);
+            
         }
-    }}
+            }
+}
